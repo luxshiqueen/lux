@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Access My Heart ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background music -->
+<audio id="bgMusic" src="music/love-song.mp3" autoplay loop></audio>
+
+
+<div class="container">
+
+  <!-- Left and Right navigation images -->
+  <img src="images/left.jpg" alt="Previous" class="nav-img left" onclick="prevSlide()">
+  <img src="images/right.jpg" alt="Next" class="nav-img right" onclick="nextSlide()">
+
+  <!-- Floating hearts -->
+ <div class="slide active">
+
+ <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="videos/bg.mp4" type="video/mp4">
+  </video>
+
+
+    <h1>Do you want to access my heart? 💖</h1>
+    <div class="options">
+      <!-- YES image -->
+      <img src="images/yes.jpg" alt="Yes Heart" class="heart-img yes" onclick="playMusic(); nextSlide()">
+      
+      <!-- NO image -->
+      <img src="images/no.jpg" alt="No Heart" class="heart-img no" onmouseover="moveNo()">
+    </div>
+  </div>
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+  <!-- Page 2 (YOUR IMAGE HERE) -->
+
+
+
+<div class="slide gallery-page">
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="videos/bg2.mp4" type="video/mp4">
+  </video>
+
+  <!-- Content -->
+  <div class="gallery-content">
+    <h1>Our Memories 📸</h1>
+
+    <div class="film-roll">
+
+      <!-- 1 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><img src="images/pic1.jpeg"></div>
+          <div class="flip-back"><img src="images/pic1b.jpeg"></div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><img src="images/pic2.jpeg"></div>
+          <div class="flip-back"><img src="images/pic2b.jpeg"></div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><img src="images/pic3.jpeg"></div>
+          <div class="flip-back"><img src="images/pic3b.jpeg"></div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><img src="images/pic4.jpeg"></div>
+          <div class="flip-back"><img src="images/pic4b.jpeg"></div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><img src="images/pic5.jpeg"></div>
+          <div class="flip-back"><img src="images/pic5b.jpeg"></div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front"><img src="images/pic6.jpeg"></div>
+          <div class="flip-back"><img src="images/pic6b.jpeg"></div>
+        </div>
+      </div>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+  <!-- Page 3 -->
+<div class="slide quiz-page">
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="videos/bg3.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay (light for readability) -->
+  <div class="overlay"></div>
+
+  <!-- Quiz Content -->
+  <div class="quiz-container">
+
+    <div class="quiz-box">
+
+      <!-- Q1 -->
+      <div class="quiz-step active">
+        <h2>When did we first talk? 💬</h2>
+        <input type="text" id="q1" placeholder="Answer here...">
+        <button onclick="checkAnswer(1, '2025 june 15')">Next ❤️</button>
+      </div>
+
+      <!-- Q2 -->
+      <div class="quiz-step">
+        <h2>When did we first meet? 🥰</h2>
+        <input type="text" id="q2">
+        <button onclick="checkAnswer(2, '2025 june 16')">Next ❤️</button>
+      </div>
+
+      <!-- Q3 -->
+      <div class="quiz-step">
+        <h2>Our proposal date? 💍</h2>
+        <input type="text" id="q3">
+        <button onclick="checkAnswer(3, 'jan 19')">Next ❤️</button>
+      </div>
+
+      <!-- Q4 -->
+      <div class="quiz-step">
+        <h2>My birthday? 🎂</h2>
+        <input type="text" id="q4">
+        <button onclick="checkAnswer(4, 'aug 7')">Next ❤️</button>
+      </div>
+
+      <!-- Q5 -->
+      <div class="quiz-step">
+        <h2>Our special monthly date? 📅</h2>
+        <input type="text" id="q5">
+        <button onclick="checkAnswer(5, '16')">Finish 💖</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+<div class="slide letter-page">
+
+  <video autoplay muted loop class="bg-video">
+    <source src="videos/bg4.mp4" type="video/mp4">
+  </video>
+
+  <h1 class="letter-title">Open My Letters 💌</h1>
+
+  <div class="letters-wrapper">
+
+    <!-- 1️⃣ DARK PINK -->
+    <div class="envelope-container theme1" onclick="toggleLetter(this)">
+      <div class="envelope"><div class="flap"></div></div>
+      <div class="letter">You are my everything ❤️</div>
+      <div class="sparkles"></div>
+    </div>
+
+    <!-- 3️⃣ MIXED (MIDDLE) -->
+    <div class="envelope-container theme3" onclick="toggleLetter(this)">
+      <div class="envelope"><div class="flap"></div></div>
+      <div class="letter">Forever with you 💖</div>
+      <div class="sparkles"></div>
+    </div>
+
+    <!-- 2️⃣ PURPLE -->
+    <div class="envelope-container theme2" onclick="toggleLetter(this)">
+      <div class="envelope"><div class="flap"></div></div>
+      <div class="letter">Happy Birthday My Love 🎂</div>
+      <div class="sparkles"></div>
+    </div>
+
+  </div>
+
+<img src="images/left.jpg" class="nav-btn nav-left" onclick="prevSlide()">
+<img src="images/right.jpg" class="nav-btn nav-right" onclick="nextSlide()">
+ </div>
+ 
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<!-- 4th jar-->
+<div class="slide jar-slide">
+  <h1 class="jar-title">Reasons I Love You 💌</h1>
+
+  <div class="jar-container">
+    <!-- Jar Image -->
+    <img src="images/jar.png" alt="Jar" id="jarImg" class="jar-image">
+
+    <!-- Letters -->
+    <div class="letter letter1"><span class="ribbon">🎀</span> I love your smile 😍</div>
+    <div class="letter letter2"><span class="ribbon">💜</span> Your laugh makes me happy 😂</div>
+    <div class="letter letter3"><span class="ribbon">💚</span> You always support me 💪</div>
+    <div class="letter letter4"><span class="ribbon">💛</span> Your hugs feel like home 🏡</div>
+    <div class="letter letter5"><span class="ribbon">💖</span> You make every day special ✨</div>
+    <div class="letter letter6"><span class="ribbon">🧡</span> You are my best friend ❤️</div>
+    <div class="letter letter7"><span class="ribbon">💙</span> I love you just the way you are 💖</div>
+
+    <!-- Sparkles -->
+    <div class="sparkle-container"></div>
+  </div>
+
+  <p class="instruction">Tap the jar to see a reason 💌</p>
+
+  <audio id="jarSound" src="sounds/paper-pop.mp3"></audio>
+</div>
+
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+<!-- ================= LAST PAGE ================= -->
+<div class="slide last-page">
+
+  <video class="bg-video" autoplay muted loop>
+    <source src="videos/love.mp4" type="video/mp4">
+  </video>
+
+  <div class="love-box">
+    <h1>Do you really love me? 💖</h1>
+
+    <div class="btn-group">
+      <button class="yes-btn" onclick="yesLove()">YES ❤️</button>
+      <button class="no-btn" onclick="noLove()">NO 💔</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- 💌 POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <h2>I too really love you ❤️</h2>
+    <h3>Miththiiii 💖💖</h3>
+    <button onclick="startFireworks()">OK</button>
+  </div>
+</div>
+
+<!-- 🎆 FIREWORKS -->
+<canvas id="fireworks"></canvas>
+
+
+<!-- ================= NEXT PAGE ================= -->
+<div class="slide next-page">
+
+  <video class="bg-video" autoplay muted loop>
+    <source src="videos/final-bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="next-content">
+
+    <h1>💍 Our Next Chapter Begins 💖</h1>
+
+    <!-- 🎥 BIG CLICKABLE VIDEO -->
+    <video id="myVideo" class="center-video" onclick="playMyVideo()">
+      <source src="videos/myvideo.mp4" type="video/mp4">
+    </video>
+
+    <p>Tap the video to play 💖</p>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
